@@ -1,6 +1,7 @@
 import { ConnectEmbed } from "@/app/thirdweb";
 import { client } from "./client";
 import { chain } from "./chain";
+import { PayMate } from "../../components/PayMate"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         client={client}
         chain={chain}
       />
+      <PayMate/>
     </div>
    </>
   );
